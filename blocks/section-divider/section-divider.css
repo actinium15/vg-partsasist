@@ -54,13 +54,13 @@
 
 /* backgrounds variants */
 .section-divider-container.faq-background {
-  background-image: url("/media/faq_heading.webp");
+  background-image: url("/media/faq_heading.jpeg");
 }
 
 .section-divider-container.resource-background {
-  background-image: url("/media/resources_heading.webp");
+  background-image: url("/media/resources_heading.jpeg");
 }
 
 .section-divider-container.support-background {
-  background-image: url("/media/support_heading.webp");
+  background-image: url("/media/support_heading.jpeg");
 }
