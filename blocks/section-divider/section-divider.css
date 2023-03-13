@@ -53,14 +53,50 @@
 }
 
 /* backgrounds variants */
-.section-divider-container.faq-background {
-  background-image: url("/media/faq_heading.webp");
+@media (max-width: 480px) {
+  .section-divider-container.faq-background {
+    background-image: url("/media/faq_heading.webp?width=480");
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .section-divider-container.faq-background {
+    background-image: url("/media/faq_heading.webp?width=1024");
+  }
+}
+@media (min-width: 1025px) {
+  .section-divider-container.faq-background {
+    background-image: url("/media/faq_heading.webp");
+  }
 }
 
-.section-divider-container.resource-background {
-  background-image: url("/media/resources_heading.webp");
+@media (max-width: 480px) {
+  .section-divider-container.resource-background {
+    background-image: url("/media/resources_heading.webp?width=480");
+  }
+}
+@media (max-width: 481px) and (max-width: 1024px) {
+  .section-divider-container.resource-background {
+    background-image: url("/media/resources_heading.webp?width=1024");
+  }
+}
+@media (min-width: 1025px) {
+  .section-divider-container.resource-background {
+    background-image: url("/media/resources_heading.webp");
+  }
 }
 
-.section-divider-container.support-background {
-  background-image: url("/media/support_heading.webp");
+@media (max-width: 480px) {
+  .section-divider-container.support-background {
+    background-image: url("/media/support_heading.webp?width=480");
+  }
+}
+@media (max-width: 481px) and (max-width: 1024px) {
+  .section-divider-container.support-background {
+    background-image: url("/media/support_heading.webp?width=1024");
+  }
+}
+@media (min-width: 1025px) {
+  .section-divider-container.support-background {
+    background-image: url("/media/support_heading.webp");
+  }
 }
