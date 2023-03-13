@@ -1,4 +1,4 @@
-import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import { readBlockConfig, decorateIcons, forceDisableWebp } from '../../scripts/lib-franklin.js';
 
 /**
  * loads and decorates the footer
@@ -14,6 +14,7 @@ export default async function decorate(block) {
   const html = await resp.text();
   const footer = document.createElement('div');
   footer.innerHTML = html;
+  forceDisableWebp(footer);
   await decorateIcons(footer);
   const lcol = document.createElement('div');
   lcol.classList.add('footer-lcol');

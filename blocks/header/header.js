@@ -1,4 +1,4 @@
-import { decorateIcons, decorateButtons, getMetadata, forceJpeg } from '../../scripts/lib-franklin.js';
+import { decorateIcons, decorateButtons, getMetadata, forceDisableWebp } from '../../scripts/lib-franklin.js';
 
 // media query match that indicates mobile/tablet width
 const MQ = window.matchMedia('(min-width: 992px)');
@@ -196,7 +196,7 @@ export default async function decorate(block) {
   const nav = document.createElement('nav');
   nav.id = 'nav';
   nav.innerHTML = html;
-  forceJpeg(nav);
+  forceDisableWebp(nav);
 
   const classes = ['brand', 'sections'];
   classes.forEach((c, i) => {

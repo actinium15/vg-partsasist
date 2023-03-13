@@ -11,7 +11,7 @@ import {
   waitForLCP,
   loadBlocks,
   loadCSS,
-  forceJpeg,
+  forceDisableWebp,
 } from './lib-franklin.js';
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
@@ -146,7 +146,7 @@ function loadDelayed() {
 }
 
 async function loadPage() {
-  forceJpeg(document);
+  forceDisableWebp(document);
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
