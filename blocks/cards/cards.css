@@ -141,7 +141,7 @@
     width: 100px;
     left: 50%;
     top: 50%;
-    background-image: url('/media/play-bright.png');
+    background-image: url('/media/play-bright.webp');
     opacity: 0.4;
     background-size: cover;
     cursor: pointer;

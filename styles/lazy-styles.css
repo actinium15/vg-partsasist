@@ -38,7 +38,7 @@
 }
 
 .section#whypartsasist {
-    background-image: url("/media/parallax1.png"), url("/media/parallax2.png");
+    background-image: url("/media/parallax1.webp"), url("/media/parallax2.webp");
     background-repeat: no-repeat, no-repeat;
     background-position: top left, right;
 }
