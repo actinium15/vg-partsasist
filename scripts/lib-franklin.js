@@ -610,4 +610,12 @@ function init() {
   });
 }
 
+export function forceJpeg(root) {
+  root.querySelectorAll('picture > source').forEach((el) => {
+    if (el['type'] === "image/webp") {
+      el['srcset'] = el['srcset'].replace('format=webply', 'format=jpeg');
+    };
+  });
+}
+
 init();
